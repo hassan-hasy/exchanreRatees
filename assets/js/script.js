@@ -1,5 +1,5 @@
 function getCountry() {
-    let endpoint = "http://ip-api.com/json/?fields=country"; //get user location form this api.
+    let endpoint = "https://ip-api.com/json/?fields=country"; //get user location form this api.
 
     fetch(endpoint).then(
         function (response) {
