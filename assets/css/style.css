@@ -1,0 +1,11 @@
+html,body{
+    background-color: #dbd7c6;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.m-auto{
+  margin: auto !important;
+}
+.mt-n10{
+    margin-top: -10% !important;
+}
