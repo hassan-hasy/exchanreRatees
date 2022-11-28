@@ -8,8 +8,6 @@ function getBase() {
         $.get('https://ipapi.co/currency/', function (data) {
             base = data;
             localStorage.setItem('base', base);
-            console.log("base function runing");
-    
         });
         
     }
@@ -19,7 +17,6 @@ function getBase() {
 function getCountry() {
     if (country == null) {
         $.get('https://ipapi.co/country_name', function (data) {
-            console.log("country function runing");
             localStorage.setItem('country', data);
             country = data;
             countryName.innerHTML = country;
@@ -31,38 +28,6 @@ function getCountry() {
     }
 
 }
-
-// function getIp() {
-//     $.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
-//         console.log(JSON.stringify(data, null, 2));
-//         // console.log(data.ipAddress);
-//         // clientIp=data.ipAddress;
-//         let countryName = document.getElementById("countryName");
-//         countryName.innerHTML = data.countryName;
-//     });
-// }
-// getIp();
-// function getCountry() {
-//     let endpoint = "https://api.iplocation.net/?ip="+clientIp; //get user location form this api.
-
-//     fetch(endpoint).then(
-//         function (response) {
-//             let promiseForward = response.json();
-//             return promiseForward;
-//         }
-//     ).then(
-//         function (data) {
-//             console.log(data.country);
-//             let countryName = document.getElementById("countryName");
-//             countryName.innerHTML = data.country;
-//         }
-//     ).catch(
-//         function (error) {
-//             console.log(error)
-//         });
-// }
-
-// getCountry();
 
 function getCurrencyRates() {
 
